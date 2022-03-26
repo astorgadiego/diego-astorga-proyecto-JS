@@ -1,0 +1,53 @@
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.separate-side-left {
+    margin-left: 20px;
+}
+
+.lightgrey-text {
+    color: lightgrey;
+}
+
+.wide-80 {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+.color{
+    background-color: rgb(6, 156, 56) !important;
+}
+.centrar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.centrartexto{
+    text-align: center;
+}
+.color2{
+    background-color: rgb(91, 212, 107);
+}
+
+.centrar2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.padding{
+    padding-left: 2rem;
+}
+.color3{
+    background-color: rgb(5, 68, 3);
+}
+.colortexto{
+    color: rgb(226, 168, 43);
+}

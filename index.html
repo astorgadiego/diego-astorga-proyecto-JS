@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>La Boca Food</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="materialize/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/parametros.js"></script>
+    <script defer src="js/variables.js"></script>
+    <script src="js/objCotizador.js"></script>
+    <script src="js/logica.js"></script>
+    <script defer src="js/storage.js"></script>
+    <script defer src="js/app.js"></script>
+</head>
+<body>
+    <div>
+        <nav class="color">
+            <div class="">
+                <a href="#!" class=" brand-logo">La Boca Food</a>
+                    <ul class="right">
+                        <li><a href="#" class="btn-floating btn-large color darken-3 z-depth-0 waves-effect waves-light" id="btnRefrescar">
+                              <i class="material-icons white-text center" title="Comenzar nuevamente">refresh</i>
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="contenido" class=" wide-80 center color2 lighten-4  z-depth-4">
+    <h3 class="centrar black-text">Comprar Frutas y Verduras</h3>
+        <div class="">
+            <h5 class="left-align padding">ELIGA EL PRODUCTO</h5>
+            <div class=" row">
+                <div class=" col l4 ">
+                  <select class="centrar2" id="selectProducto">
+                        <option> </option>
+                  </select>
+                </div>
+                <div class="col s2 m6 l8 left-align">
+                  <button class="btn-floating blue lighten-4" title="Ver Productos Disponibles"><i class="material-icons black-text" >info</i></button>
+                </div>
+            </div>
+            <h5 class="left-align padding">ELIGA LA CANTINDAD EN KILOS</h5>
+            <div class=" row">
+                <div class="col l4 ">
+                  <select class="centrar" id="selectCantKilos">
+                        <option> </option>
+                  </select>
+                </div>
+                <div class="col s2 m6 l8 left-align">
+                  <button class="btn-floating blue lighten-4" title="Puede llevar la cantidad que desee"><i class="material-icons black-text" >info</i></button>
+                </div>
+            </div>
+            <h5 class="left-align padding">ELIGA EN CUANTAS CUOTAS VA A PAGAR
+
+            </h5>
+            <div class=" row">
+                <div class="col s4 m6 l2 right-align">
+                    <input type="number" id="cantCuotas" class="white" placeholder="Nro. entero" min="1" max="500">
+                </div>
+            </div>    
+            <h5 class="centrartexto">Finalizado el ingreso de datos, pulse el botón para saber el total:  
+            </h5>
+            <button id="btnCalcular" class="btn-floating centrartexto color darken-3 z-depth-2 btn-large waves-effect waves-light" title="Pulse para calcular el      total de su compra">
+                <i class="material-icons large">attach_money</i>
+            </button>
+        
+        </div>
+        <br> 
+        <div id="resultadoCotizacion" class="wide-80 center color3 lighten-2 z-depth-4">
+            <div class="row">
+                <div class="col s8 left">
+                    <h4 class="colortexto left-align">Su total a pagar es: </h4>
+                </div>
+                <div  class="col s4 right">
+                    <h4 id="valorCuota" class="yellow-text right-align">$ 0.00</h4>
+                    <h4 id="linea_cuota" class="yellow-text right-align"> </h4>
+                </div>      
+            </div>
+        </div>
+        <br>
+    </div>
+</body>
+</html>
