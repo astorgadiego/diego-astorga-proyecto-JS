@@ -24,9 +24,9 @@ const calcularCompraTotal = ()=> {
         return
     } else {
         mts = parseInt(cantCuotas.value)
-        zonaViv = parseFloat(selectProducto.value)
-        tipoViv = parseFloat(selectCantKilos.value)
-        valorDeLaCompra = csh.valorCompra(mts, zonaViv, tipoViv);
+        precioProd = parseFloat(selectProducto.value)
+        kilosSelec = parseFloat(selectCantKilos.value)
+        valorDeLaCompra = csh.valorCompra(precioProd, kilosSelec);
         valorDelaCuota= csh.valorCuota(valorDeLaCompra,mts)
         valorCuota.innerText = "Cada Cuota de $"+valorDelaCuota;
         linea_cuota.innerText="Su total es $"+valorDeLaCompra;    
