@@ -18,18 +18,17 @@ const faltanCargarDatos = ()=> {
     return (isNaN(cantCuotas.value) || selectCantKilos.value.trim() == "" || selectProducto.value.trim() == "")
 }
 
-const calcularCompraTotal = ()=> {
-    if (faltanCargarDatos()) {
-        alert("Complete toda la información solicitada para poder usar este servicio.")
-        return
-    } else {
-        mts = parseInt(cantCuotas.value)
+const realizarcalculo = ()=>{
+    mts = parseInt(cantCuotas.value)
         precioProd = parseFloat(selectProducto.value)
         kilosSelec = parseFloat(selectCantKilos.value)
         valorDeLaCompra = csh.valorCompra(precioProd, kilosSelec);
         valorDelaCuota= csh.valorCuota(valorDeLaCompra,mts)
         valorCuota.innerText = "Cada Cuota de $"+valorDelaCuota;
-        linea_cuota.innerText="Su total es $"+valorDeLaCompra;    
-        
-    }
+        linea_cuota.innerText="Su total es $"+valorDeLaCompra;
+}
+
+const calcularCompraTotal = ()=> {
+    faltanCargarDatos() ? alert("Complete toda la información solicitada para poder usar este servicio.") : realizarcalculo()
+    
 }
