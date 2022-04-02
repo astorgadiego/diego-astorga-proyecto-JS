@@ -1,3 +1,6 @@
+
+
+
 const tipoProducto = [{"tipo": "Brocoli Congelado", "precio": 340},
                       {"tipo": "Cebollas Congeladas", "precio": 380},
                       {"tipo": "Choclo Congelado", "precio": 520},
