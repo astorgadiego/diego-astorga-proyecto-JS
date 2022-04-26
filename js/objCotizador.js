@@ -1,6 +1,6 @@
 class CalculadorCompra {
                         constructor (jsonTP, jsonKC) {
-                                                        this.arrayTipoProducto = jsonTP ||[{"Error":"Error al obtener el dato"}]
+                                                        this.TipoDeProducto = jsonTP ||[{"Error":"Error al obtener el dato"}]
                                                         this.arrayKilosCantidad = jsonKC ||[{"Error":"Error al obtener el dato"}]
                                                      }
                         valorCompra(precioproducto, kilos) {

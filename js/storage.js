@@ -1,11 +1,11 @@
 const guardarSesion=(clave,valor)=>{
-    sessionStorage.setItem(clave,valor)
+    localStorage.setItem(clave,valor)
 };
 
-guardarSesion("ListaProductos", JSON.stringify(tipoProducto));
-guardarSesion("CantidadesDisponibles", JSON.stringify(kilosCantidad));
+guardarSesion("ListaProductos", JSON.stringify(arrayTipoProducto));
+guardarSesion("CantidadesDisponibles", JSON.stringify(arrayCantidadKilos));
 
-const almacenados = JSON.parse(sessionStorage.getItem("ListaProductos"));
+const almacenados = JSON.parse(localStorage.getItem("ListaProductos"));
 const productos=[];
 for (const objeto of almacenados){
     productos.push(new CalculadorCompra(objeto));
